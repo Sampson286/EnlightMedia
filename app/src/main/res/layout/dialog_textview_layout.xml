@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/custem_dialog_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_image_title"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dialog_textview_layout_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:textColor="@drawable/dialog_text_color"
+            android:textSize="@dimen/dialog_common_title_textSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_image_title"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_textview_layout_tv_content"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:lineSpacingExtra="3dip"
+        android:maxLines="6"
+        android:scrollbarThumbVertical="@drawable/btn_dialog_scrollbar_thumb"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@drawable/dialog_text_color"
+        android:textSize="@dimen/dialog_common_content_textSize" />
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_notice"
+        android:button="@drawable/chexbox_drawable"
+        android:textColor="@drawable/dialog_text_color"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_textview_layout_btn_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dialog_textview_layout_btn_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

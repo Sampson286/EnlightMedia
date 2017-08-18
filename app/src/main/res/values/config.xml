@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 网络数据传输及解析格式  默认是json，可配置为xml -->
+    <string name="config_network_parse_mode" translatable="false">json</string>
+    <string name="address">http://ossweb-img.qq.com/upload/qqtalk/lol_hero/</string>
+</resources>
