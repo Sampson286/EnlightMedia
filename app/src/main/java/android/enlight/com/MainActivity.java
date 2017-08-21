@@ -1,7 +1,6 @@
 package android.enlight.com;
 
 import android.enlight.com.common.view.BaseActivity;
-import android.enlight.com.request.NormalRequest;
 
 public class MainActivity extends BaseActivity {
     @Override
@@ -10,7 +9,7 @@ public class MainActivity extends BaseActivity {
     }
     @Override
     protected void initialized() {
-        NormalRequest normalRequest=new NormalRequest();
-        normalRequest.getTest(this);
+        /*NormalRequest normalRequest=new NormalRequest();
+        normalRequest.getTest(this);*/
     }
 }

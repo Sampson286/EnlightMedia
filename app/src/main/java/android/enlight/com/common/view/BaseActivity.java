@@ -1,11 +1,10 @@
 package android.enlight.com.common.view;
 
+import android.app.Activity;
 import android.enlight.com.common.application.ApplicationData;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -13,7 +12,7 @@ import butterknife.Unbinder;
  * Created by zyc on 2017/8/17.
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends Activity {
     /** 布局转换器*/
     public LayoutInflater mInflater;
     /** 布局内容视图*/

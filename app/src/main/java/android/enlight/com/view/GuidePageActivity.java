@@ -1,5 +1,7 @@
 package android.enlight.com.view;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.enlight.com.MainActivity;
 import android.enlight.com.R;
@@ -7,9 +9,7 @@ import android.enlight.com.common.view.BaseActivity;
 import android.enlight.com.view.fragment.GuidePageFragment;
 import android.enlight.com.view.pageindicator.CirclePageIndicator;
 import android.enlight.com.view.pageindicator.PageIndicator;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
 /**
@@ -31,7 +31,7 @@ public class GuidePageActivity extends BaseActivity {
     }
 
     protected void setupView() {
-        FragmentPagerAdapter adapter = new CbcHotGuideAdapter(getSupportFragmentManager());
+        FragmentPagerAdapter adapter = new CbcHotGuideAdapter(getFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(adapter);
 
@@ -74,10 +74,10 @@ public class GuidePageActivity extends BaseActivity {
     protected void initialized() {
         setupView();
     }
-    class  CbcHotGuideAdapter extends  FragmentPagerAdapter{
+    class  CbcHotGuideAdapter extends FragmentPagerAdapter {
         private int imageResID[]={R.drawable.guide_1,R.drawable.guide_2,R.drawable.guide_3};
-        public CbcHotGuideAdapter(FragmentManager fm) {
-            super(fm);
+        public CbcHotGuideAdapter(FragmentManager fragmentManager) {
+            super(fragmentManager);
         }
 
         @Override

@@ -1,7 +1,7 @@
 package android.enlight.com.view.fragment;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
  * Created by zyc on 2017/8/18.
  */
 
-public class GuidePageFragment extends Fragment{
+public class GuidePageFragment extends Fragment {
     private static final String KEY_CONTENT = "TestFragment:Content";
 
     private int mImageResId;
