@@ -76,7 +76,6 @@ public class CirclePageIndicator extends View implements PageIndicator {
 		super(context, attrs, defStyle);
 		if (isInEditMode())
 			return;
-
 		// Load defaults from resources
 		final Resources res = getResources();
 		final int defaultPageColor = res

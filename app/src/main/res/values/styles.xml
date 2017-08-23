@@ -29,4 +29,22 @@
         <item name="android:minHeight">@dimen/dialog_progress_minHeight</item>
         <item name="android:maxHeight">@dimen/dialog_progress_maxHeight</item>
     </style>
+    <!--共用title样式-->
+    <style name="main_view_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/main_title_fl_height</item>
+        <item name="android:background">@drawable/main_title_background</item>
+    </style>
+    <!--tabhost文本样式-->
+    <style name="main_tabname_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/main_bottom_text_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
 </resources>
