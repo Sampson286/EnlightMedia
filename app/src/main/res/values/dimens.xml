@@ -14,4 +14,11 @@
     <dimen name="dialog_common_content_textSize">16sp</dimen>
     <dimen name="dialog_update_title_textSize">19sp</dimen>
     <dimen name="dialog_update_content_textSize">16sp</dimen>
+
+    <!-- 下拉控件相关设置 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
 </resources>

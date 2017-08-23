@@ -26,9 +26,9 @@ public class MainActivity extends BaseActivity {
     protected void initialized() {
         /*NormalRequest normalRequest=new NormalRequest();
         normalRequest.getTest(this);*/
-        mTabhost.setup(this,getFragmentManager(),R.id.main_tabcontent);
+        /*mTabhost.setup(this,getFragmentManager(),R.id.main_tabcontent);
         for (int i = 0; i < listUrl.length; i++) {
 
-        }
+        }*/
     }
 }
