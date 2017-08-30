@@ -2,10 +2,10 @@ package android.enlight.com.common.exception;
 
 /**
  * 自定义解析xml数据错误
- * @author wangyue
+ * @author zyc
  *
  */
-public class ParseException extends TDException{
+public class ParseException extends ElightException {
 
 	private static final long serialVersionUID = 1L;
 

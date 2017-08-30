@@ -2,10 +2,10 @@ package android.enlight.com.common.exception;
 
 /**
  * 网络连接错误
- * @author wangyue
+ * @author zyc
  *
  */
-public class NetworkConnectException extends TDException {
+public class NetworkConnectException extends ElightException {
 	private static final long serialVersionUID = 1L;
 	
 	public NetworkConnectException() {

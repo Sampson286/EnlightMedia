@@ -2,10 +2,10 @@ package android.enlight.com.common.exception;
 
 /**
  * 联网取消异常类
- * @author wangyue
+ * @author zyc
  *
  */
-public class NetworkForceCloseException extends TDException{
+public class NetworkForceCloseException extends ElightException {
 
 	private static final long serialVersionUID = 1L;
 

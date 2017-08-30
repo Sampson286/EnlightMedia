@@ -6,7 +6,7 @@ import android.enlight.com.common.network.model.ResponseInfo;
 /**
  * 服务器返回的状态码异常类
  */
-public class APIException extends TDException {
+public class APIException extends ElightException {
 
 	private static final long serialVersionUID = 1L;
 	/** 返回的状态码 */

@@ -3,10 +3,10 @@ package android.enlight.com.common.exception;
 /**
  * 自定义sdcard的一些错误
  * 
- * @author wangyue
+ * @author zyc
  * 
  */
-public class SdcardException extends TDException {
+public class SdcardException extends ElightException {
 
 	private static final long serialVersionUID = 1L;
 	/** sd卡错误 */

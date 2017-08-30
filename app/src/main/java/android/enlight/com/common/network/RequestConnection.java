@@ -203,7 +203,6 @@ public class RequestConnection {
                 // 返回字符串  
                 byte[] byteArray = baos.toByteArray();
                 String response = new String(byteArray, "utf-8");
-
                 if (isCancelled)
                     throw new NetworkForceCloseException();
                 return response;

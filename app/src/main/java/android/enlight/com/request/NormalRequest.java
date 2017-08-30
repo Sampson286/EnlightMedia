@@ -1,11 +1,9 @@
 package android.enlight.com.request;
 
 import android.app.Activity;
-import android.enlight.com.R;
 import android.enlight.com.common.exception.ParseException;
 import android.enlight.com.common.network.RequestBase;
 import android.enlight.com.common.network.RequestCallback;
-import android.enlight.com.common.utils.Tools;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,11 +14,13 @@ import org.json.JSONObject;
 
 public class NormalRequest extends RequestBase implements RequestCallback{
     public void getTest(Activity context){
-        String url= Tools.getString(R.string.address)+"commpackage_info.js";
+        //String url= Tools.getString(R.string.address)+"commpackage_info.js";
+        String url="http://dev.ewang.com/Ewang/movie/movielist?movietype=4";
         onStartTaskGet(context,this,url,null,false);
     }
     @Override
     public Object parserData(JSONObject jsonObject) throws JSONException {
+        String s=jsonObject.getString("status");
         return null;
     }
 
@@ -57,7 +57,8 @@ public class NormalRequest extends RequestBase implements RequestCallback{
     @Override
     protected Object onParserTask(String response) throws ParseException {
         try {
-            return parserData(new JSONObject(response));
+            String newResponse=response.substring(32);
+            return parserData(new JSONObject(newResponse));
         } catch (JSONException e) {
             e.printStackTrace();
         }
