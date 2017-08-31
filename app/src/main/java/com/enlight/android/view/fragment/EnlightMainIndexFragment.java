@@ -1,14 +1,6 @@
 package com.enlight.android.view.fragment;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.enlight.com.R;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.enlight.android.common.retrofitnetwork.ProgressSubscriber;
 import com.enlight.android.common.retrofitnetwork.RequestBase;
@@ -21,33 +13,28 @@ import com.youth.banner.Banner;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 /**
  * Created by zyc on 2017/8/30.
  * E网首页的Fragment
  */
 
-public class EnlightMainIndexFragment extends Fragment {
+public class EnlightMainIndexFragment extends BaseFragment {
+    @BindView(R.id.main_index_fragment_banner)
     Banner main_index_fragment_banner;
     //banner图数据
     private List<String> images=new ArrayList<String>();
-    private Activity currentActivity;
-    private View enlightMainIndexView;
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Toast.makeText(getActivity(),"测试",Toast.LENGTH_SHORT).show();
-        enlightMainIndexView =inflater.inflate(R.layout.main_index_fragment_layout,container,false);
-        main_index_fragment_banner=(Banner)enlightMainIndexView.findViewById(R.id.main_index_fragment_banner);
-        return enlightMainIndexView;
+    protected int getLayoutId() {
+        return R.layout.main_index_fragment_layout;
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        currentActivity=getActivity();
+    protected void initialized() {
         initData();
-
     }
+
     private void initData(){
         RequestBase requestBase= RequestBase.getInstance();
         HttpRequestApi httpRequestApi=requestBase.createReq(HttpRequestApi.class);
