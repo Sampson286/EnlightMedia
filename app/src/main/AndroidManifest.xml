@@ -13,20 +13,20 @@
     <!--读取手机的设备信息如IMEI等-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <application
-        android:name=".common.application.ApplicationData"
+        android:name="com.enlight.android.common.application.ApplicationData"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.enlight.android.view.MainIndexActivity">
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
         </activity>
-        <activity android:name=".view.GuidePageActivity"
+        <activity android:name="com.enlight.android.view.GuidePageActivity"
             android:theme="@style/AppTheme.Fullscreen"
             >
             <intent-filter>

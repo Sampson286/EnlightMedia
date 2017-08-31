@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <include
+    <!--<include
         layout="@layout/main_title"
-        ></include>
+        ></include>-->
     <LinearLayout
         android:id="@+id/button_group"
         android:layout_width="match_parent"
@@ -14,30 +14,35 @@
         android:gravity="center" >
 
         <TextView
-            android:id="@+id/main_tab_video"
+            android:id="@+id/main_tab_index"
             style="@style/main_tabname_text_style"
             android:drawableTop="@drawable/main_tab_icon_video_selector"
+            android:text="E视" />
+
+        <TextView
+            android:id="@+id/main_tab_news"
+            style="@style/main_tabname_text_style"
+            android:drawableTop="@drawable/main_tab_icon_life_selector"
+            android:text="新闻" />
+
+        <TextView
+            android:id="@+id/main_tab_video"
+            style="@style/main_tabname_text_style"
+            android:drawableTop="@drawable/main_tab_icon_navigation_selector"
             android:text="视频" />
 
         <TextView
-            android:id="@+id/main_tab_life"
+            android:id="@+id/main_tab_activity"
             style="@style/main_tabname_text_style"
-            android:drawableTop="@drawable/main_tab_icon_life_selector"
-            android:text="生活" />
-
-        <TextView
-            android:id="@+id/main_tab_navigation"
-            style="@style/main_tabname_text_style"
-            android:drawableTop="@drawable/main_tab_icon_navigation_selector"
-            android:text="阅读" />
-
+            android:drawableTop="@drawable/main_tab_icon_space_selector"
+            android:text="活动" />
         <TextView
             android:id="@+id/main_tab_space"
             style="@style/main_tabname_text_style"
             android:drawableTop="@drawable/main_tab_icon_space_selector"
             android:text="我" />
     </LinearLayout>
-    <android.enlight.com.view.customview.EnlightTabHost
+    <com.enlight.android.view.customview.EnlightTabHost
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,7 +52,7 @@
             android:id="@+id/main_tabcontent"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </android.enlight.com.view.customview.EnlightTabHost>
+    </com.enlight.android.view.customview.EnlightTabHost>
     <!--<ProgressBar
         android:id="@+id/main_title_pb"
         style="?android:attr/progressBarStyleHorizontal"

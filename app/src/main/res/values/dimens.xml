@@ -2,6 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_index_fragment_viewpager_height">200dp</dimen>
     <!-- 主页面标题栏高度 -->
     <dimen name="main_title_fl_height">42dp</dimen>
     <!-- 应用弹出的对话框 -->
